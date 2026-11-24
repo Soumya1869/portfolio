@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <script src="assets/js/script.js" defer></script>
+    <script type="module" src="/src/main.jsx"></script>
   </head>
   <body>
     <div class="page-shell">
@@ -58,40 +58,7 @@
 
         <section class="work-section section-wrap" id="work" aria-labelledby="work-title">
           <div class="section-heading reveal"><div><p class="eyebrow section-index">01 — SELECTED WORK</p><h2 id="work-title">A few things<br /><span class="serif-accent">taking shape.</span></h2></div><p class="section-aside">Small steps, real problems,<br />and plenty left to learn.</p></div>
-          <article class="project-card reveal">
-            <div class="project-visual">
-              <div class="project-visual-glow"></div>
-              <div class="project-visual-label"><span class="status-dot"></span> IN PROGRESS</div>
-              <div class="project-product"><span class="product-cube">▧</span><span>STOCKROOM</span><span class="product-arrow">↗</span></div>
-              <div class="project-visual-bottom"><span>INVENTORY, IN FOCUS</span><span>PROJECT / 001</span></div>
-            </div>
-            <div class="project-details">
-              <div class="project-meta"><span>FULL-STACK WEB APP</span><span>2026 — ONGOING</span></div>
-              <h3>Stockroom</h3>
-              <p>An inventory management app in the making. Starting with a secure API, now growing into a clear dashboard for products, stock levels, and the things that need attention.</p>
-              <div class="tag-list"><span>React</span><span>TypeScript</span><span>Spring Boot</span><span>MySQL</span><span>JWT</span></div>
-              <a class="project-link" href="https://github.com/Soumya1869/Inventory-Management-System" target="_blank" rel="noreferrer">Explore the repository <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-          <article class="project-card project-card-alt reveal">
-            <div class="project-visual project-visual-team">
-              <div class="project-visual-label"><span class="status-dot"></span> TEAM PROJECT</div>
-              <div class="team-board">
-                <div class="team-board-top"><span class="team-brand"><i>t.</i> teamspace</span><span class="team-avatar-stack"><i>S</i><i>P</i><i>+</i></span></div>
-                <div class="team-board-title"><small>PRODUCT TEAM / THIS WEEK</small><strong>Make room for<br /><em>good work.</em></strong></div>
-                <div class="board-columns"><div><b>TO DO <i>2</i></b><span>Plan launch</span><span>Review notes</span></div><div><b>IN PROGRESS <i>1</i></b><span class="board-highlight">Build the thing</span></div><div><b>DONE <i>3</i></b><span>Kickoff ✳</span></div></div>
-              </div>
-              <div class="project-visual-bottom"><span>GOOD TEAMS, IN SYNC</span><span>PROJECT / 002</span></div>
-            </div>
-            <div class="project-details">
-              <div class="project-meta"><span>TEAM PROJECT MANAGEMENT</span><span>2026</span></div>
-              <h3>TeamSpace</h3>
-              <p>A collaboration platform for teams to organize work across workspaces, projects, and Kanban boards. Includes task assignments, comments, role-based membership, and account security, with a demo mode and a Spring Boot API.</p>
-              <div class="tag-list"><span>React 19</span><span>TypeScript</span><span>TanStack</span><span>Spring Boot</span><span>PostgreSQL</span><span>JWT</span></div>
-              <a class="project-link" href="https://github.com/Soumya1869/team-flow-haven-24" target="_blank" rel="noreferrer">Explore the repository <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-          <div class="coming-soon reveal"><span class="coming-mark">✳</span><p>More projects are brewing.<br /><span>I'm building one good thing at a time.</span></p><span class="coming-line"></span><span class="coming-number">03 / NEXT</span></div>
+          <div id="projects-react-root"></div>
         </section>
 
         <section class="about-section" id="about" aria-labelledby="about-title">
@@ -174,6 +141,7 @@
     </div>
   </body>
 </html>
+
 
 
 
