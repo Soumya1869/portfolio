@@ -1,21 +1,30 @@
 # Soumya — Portfolio
 
-A responsive, single-page portfolio built with plain HTML, CSS, and JavaScript.
+A responsive portfolio with a React-powered project gallery, written in React, Vite, and CSS.
 
 ## Run locally
 
-Open `index.html` in a browser, or serve the project folder with any static file server. No build step or package installation is required.
+Install [Node.js](https://nodejs.org/) 20.19+ and npm, then run:
+
+```bash
+npm install
+npm run dev
+```
+
+Vite prints a local URL to open in your browser. To create and preview a production build, run `npm run build` and then `npm run preview`.
 
 ## Project structure
 
 ```text
 portfolio/
 ├── index.html
+├── src/
+│   └── main.jsx           # React project cards and detail dialogs
 ├── assets/
-│   ├── css/
-│   │   └── styles.css
-│   └── js/
-│       └── script.js
+│   └── css/
+│       └── styles.css
+├── package.json
+├── vite.config.js
 ├── README.md
 └── .gitignore
 ```
@@ -23,8 +32,8 @@ portfolio/
 ## Customize
 
 - Update the contact email in `index.html` before publishing.
-- Replace or refine the portfolio copy, project links, and milestone details as needed.
-- Edit `assets/css/styles.css` for visual changes and `assets/js/script.js` for interactions.
+- Project names, descriptions, features, technologies, and GitHub links are grouped in `src/main.jsx`.
+- Edit `assets/css/styles.css` for visual changes.
 
 ## Projects featured
 
